@@ -1,12 +1,9 @@
+
+
 #include <iostream>
 #include <string>
 #include <time.h>
 using namespace std;
-
-#include <iostream>
-#include <string>
-using namespace std;
-
 struct Player {
     string name;
     string playerClass;
@@ -320,13 +317,20 @@ int main()
             if (level == 3) {
                 cout << "\tOH My God Our childer are under Attack! WE are begging you Please save our Childs!";
             }
-            else if (level == 4) {
+            if (level == 4) {
                 cout << "\tMONSTER Falkor has arrived ! BE SAFE ! " << endl;
                 ehealth = 300;
             }
-            else if (level == 7) {
+            if (level == 5) {
+                cout << "Again monsters have arrived ";
+            }
+            if (level == 6) {
+                cout << "OOH NOO laviathon Has Arrived " << endl;
+
+            }
+            if (level == 7) {
                 cout << "\nHere comes THE Tyrent Head of all Monsters ! " << endl;
-                ehealth = 300;
+                ehealth = 450;
             }
             else {
                 ehealth = 100 + (level - 1) * 25;
